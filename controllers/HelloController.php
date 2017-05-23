@@ -2,9 +2,11 @@
 namespace app\controllers;
 class HelloController extends \yii\web\Controller{
 	public function actionIndex(){
+		$weigth=50;
 		return $this->render('index',[
 			'firstname'=>'เดีย',
-			'lastname'=>'เอง'
+			'lastname'=>'เอง',
+			'weigth'=> $weigth
 			]
 			);
 	}
